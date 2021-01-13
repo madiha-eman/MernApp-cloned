@@ -38,7 +38,7 @@ router.post("/", async (req, res) => {
 //Get single user
 router.get('/:id', async (req, res) => {
     try {
-    const userOne = await User.findById(req.params.id);
+    const userOne = await User.findById(req.params._id);
     res.status(200).json({ success: true, data: userOne });
   } catch (err) {
     res.status(400).json({ success: false, error: err.message });

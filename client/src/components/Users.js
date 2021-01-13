@@ -51,7 +51,7 @@ function Users() {
                 </Col>
               </Row>
             </ListGroup.Item>
-          ))} }
+          ))} 
         </ListGroup>
       </Col>
       <Col lg={3} md={2} sm={1} xs={1}></Col>

@@ -18,7 +18,7 @@ const handleSubmit=()=>{
 }
   return (
 
-    <form  onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit}>
       <Row className="mt-5" >
         <Col lg={3} md={2} sm={1} xs={1}></Col>
         <Col lg={6} md={8} sm={10} xs={10}>
