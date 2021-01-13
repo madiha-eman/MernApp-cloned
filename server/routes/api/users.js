@@ -19,7 +19,7 @@ router.post("/", async (req, res) => {
       const user = await User.create(req.body);
     res.status(201).json({
       success: true,
-      dbid: user._id
+      dbid: user.id
     });
   } catch (err) {
     console.log(err);
@@ -38,7 +38,7 @@ router.post("/", async (req, res) => {
 //Get single user
 router.get('/:id', async (req, res) => {
     try {
-    const userOne = await User.findById(req.params._id);
+    const userOne = await User.findById(req.params.id);
     res.status(200).json({ success: true, data: userOne });
   } catch (err) {
     res.status(400).json({ success: false, error: err.message });

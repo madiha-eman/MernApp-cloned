@@ -44,7 +44,7 @@ function Users() {
                     variant="info"
                     size="sm"
                     as={Link}
-                    to={"/single-user/" + item._id}
+                    to={"/single-user/" + item.id}
                   >
                     View
                   </Button>
